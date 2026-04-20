@@ -75,6 +75,23 @@ h2{
     margin-bottom:30px;
 }
 
+.section{
+    margin-top:40px;
+}
+
+.section h3{
+    color:#800000;
+    margin-bottom:15px;
+}
+
+.box{
+    background:#fafafa;
+    padding:25px;
+    border-radius:15px;
+    line-height:1.9;
+    border-left:6px solid #800000;
+}
+
 /* TEACHER */
 .teacher{
     text-align:center;
@@ -97,38 +114,12 @@ h2{
     color:#800000;
 }
 
-/* SECTION */
-.section{
-    margin-top:40px;
-}
-
-.section h3{
-    color:#800000;
-    margin-bottom:15px;
-}
-
-/* GUIDE */
-.guide{
-    background:#fafafa;
-    padding:25px;
-    border-radius:15px;
-    line-height:1.9;
-    border-left:6px solid #800000;
-}
-
-.step{
-    margin-bottom:25px;
-}
-
 /* VIDEO */
-.video{
-    margin-top:30px;
-}
-
 iframe{
     width:100%;
     height:420px;
     border-radius:12px;
+    margin-top:20px;
 }
 
 /* MEMBERS */
@@ -167,8 +158,8 @@ footer{
 <div class="main">
 <div class="container">
 
-<h2>Cloud Web Hosting (GitHub)</h2>
-<div class="sub">การอัปโหลดเว็บไซต์ขึ้นใช้งานผ่าน GitHub ตามเอกสารทางการ</div>
+<h2>Cloud Web Hosting</h2>
+<div class="sub">รายงานการนำเว็บไซต์ขึ้นใช้งานบนระบบคลาวด์ด้วย GitHub</div>
 
 <!-- อาจารย์ -->
 <div class="teacher">
@@ -177,51 +168,56 @@ footer{
     <div>อาจารย์ที่ปรึกษาโครงการ</div>
 </div>
 
-<!-- วิธีทำ -->
+<!-- ความหมาย -->
 <div class="section">
-<h3>ขั้นตอนการอัปโหลดเว็บไซต์ขึ้น GitHub</h3>
+<h3>1. ความหมายของ Web Hosting บนคลาวด์</h3>
+<div class="box">
+Web Hosting บนคลาวด์ (Cloud Web Hosting) คือ การนำเว็บไซต์ไปจัดเก็บและให้บริการผ่านระบบเซิร์ฟเวอร์บนอินเทอร์เน็ต 
+โดยใช้เทคโนโลยีคลาวด์ ซึ่งมีการกระจายข้อมูลไปยังหลายเซิร์ฟเวอร์ ทำให้เว็บไซต์สามารถเข้าถึงได้ตลอดเวลา มีความเสถียรสูง 
+และรองรับผู้ใช้งานจำนวนมากได้ดีกว่าการใช้เซิร์ฟเวอร์แบบเดิม นอกจากนี้ยังสามารถขยายทรัพยากรได้ตามความต้องการ 
+เช่น เพิ่มพื้นที่จัดเก็บข้อมูลหรือเพิ่มความเร็วในการประมวลผล
+</div>
+</div>
 
-<div class="guide">
+<!-- เครื่องมือ -->
+<div class="section">
+<h3>2. เครื่องมือที่ใช้ในการพัฒนาและอัปโหลดเว็บไซต์</h3>
+<div class="box">
+GitHub เป็นแพลตฟอร์มสำหรับจัดเก็บโค้ดและควบคุมเวอร์ชัน (Version Control) โดยใช้ระบบ Git 
+ผู้พัฒนาสามารถอัปโหลดไฟล์เว็บไซต์ เช่น HTML, CSS และ JavaScript ขึ้นไปเก็บไว้บน GitHub ได้ 
+นอกจากนี้ยังมีบริการ GitHub Pages ที่ช่วยให้สามารถนำเว็บไซต์ขึ้นออนไลน์ได้ฟรี 
+เหมาะสำหรับเว็บไซต์แบบ Static เช่น เว็บไซต์แนะนำผลงาน หรือเว็บไซต์โปรเจค
+</div>
+</div>
 
-<div class="step">
+<!-- ขั้นตอน -->
+<div class="section">
+<h3>3. ขั้นตอนการอัปโหลดเว็บไซต์ขึ้น GitHub</h3>
+<div class="box">
+
 <b>1. สมัครสมาชิก GitHub</b><br>
-เข้าไปที่เว็บไซต์ https://github.com แล้วทำการสมัครสมาชิกโดยกรอกอีเมล ชื่อผู้ใช้ และรหัสผ่าน จากนั้นยืนยันตัวตนให้เรียบร้อย
-</div>
+เข้าไปที่ https://github.com และสมัครสมาชิกให้เรียบร้อย<br><br>
 
-<div class="step">
-<b>2. สร้าง Repository (พื้นที่เก็บโปรเจค)</b><br>
-หลังจากเข้าสู่ระบบ ให้กดปุ่ม “New” หรือ “Create Repository” จากนั้นตั้งชื่อโปรเจค เลือกเป็น Public และกด Create Repository
-</div>
+<b>2. สร้าง Repository</b><br>
+กดปุ่ม New → ตั้งชื่อโปรเจค → เลือก Public → Create Repository<br><br>
 
-<div class="step">
 <b>3. อัปโหลดไฟล์เว็บไซต์</b><br>
-ภายใน Repository ให้กดปุ่ม “Add file” → “Upload files” จากนั้นเลือกไฟล์เว็บไซต์ เช่น HTML, CSS, JavaScript แล้วกด Commit changes
-</div>
+กด Add file → Upload files → เลือกไฟล์ → Commit changes<br><br>
 
-<div class="step">
 <b>4. เปิดใช้งาน GitHub Pages</b><br>
-ไปที่ Settings → Pages → เลือก Branch เป็น main และกด Save ระบบจะสร้างลิงก์เว็บไซต์ให้โดยอัตโนมัติ
-</div>
+ไปที่ Settings → Pages → เลือก Branch เป็น main → Save<br><br>
 
-<div class="step">
 <b>5. เข้าใช้งานเว็บไซต์</b><br>
-หลังจากเปิด GitHub Pages แล้ว จะได้ลิงก์เว็บไซต์ เช่น https://username.github.io/repository-name ซึ่งสามารถนำไปใช้งานได้ทันที
-</div>
+ระบบจะสร้างลิงก์เว็บไซต์ เช่น https://username.github.io/project<br><br>
 
-<div class="step">
-<b>หมายเหตุ</b><br>
-- GitHub Pages รองรับเว็บไซต์แบบ Static (HTML, CSS, JavaScript)<br>
-- ไม่รองรับ PHP หรือฐานข้อมูล<br>
-- เหมาะสำหรับเว็บไซต์แนะนำผลงาน หรือโปรเจคทั่วไป
+<b>หมายเหตุ:</b><br>
+รองรับเฉพาะ HTML, CSS, JavaScript ไม่รองรับ PHP
 </div>
 
 <!-- VIDEO -->
-<div class="video">
 <h3>วิดีโอสอนการอัปโหลดเว็บไซต์ขึ้น GitHub</h3>
 <iframe src="https://www.youtube.com/embed/bTzUvdPoGpI" allowfullscreen></iframe>
-</div>
 
-</div>
 </div>
 
 <!-- สมาชิก -->
